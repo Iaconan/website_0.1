@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website_0.1</title>
 
+    <!-- swiper js -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+
     <!-- link css -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -240,9 +246,105 @@
     </section>
 
 
+    <!-- Testimonials -->
+
+    <section class="container testimonials__container mySwiper">
+        <h2>Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="laptop">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Julia zzz</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi similique tenetur sunt nesciunt! Animi, vel?</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="laptop">
+                </div>
+                <div class="testimonial__info">
+                    <h5>ttt zzz</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi similique tenetur sunt nesciunt! Animi, vel?</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="laptop">
+                </div>
+                <div class="testimonial__info">
+                    <h5>yyy zzz</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi similique tenetur sunt nesciunt! Animi, vel?</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="laptop">
+                </div>
+                <div class="testimonial__info">
+                    <h5>uuu zzz</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi similique tenetur sunt nesciunt! Animi, vel?</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="laptop">
+                </div>
+                <div class="testimonial__info">
+                    <h5>iii zzz</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi similique tenetur sunt nesciunt! Animi, vel?</p>
+                </div>
+            </article>
+
+        </div>
+        <div class="swiper-pagination"></div>
+
+    </section>
+
+
 
     
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="./main.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          breakpoints: {
+              600: {
+          slidesPerView: 2
+
+              }
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
 </body>
 </html>
